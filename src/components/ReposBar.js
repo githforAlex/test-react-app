@@ -9,7 +9,7 @@ function ReposBar({data, repositories}) {
       {repositories.map((repositories, i) => (
         <div className="reposItems" key={repositories.name}>
             <a className="reposLink" href={repositories.html_url} 
-            target="_blank">{repositories.name}</a>
+            rel="noopener noreferrer" target="_blank">{repositories.name}</a>
             <span className="repos_info">{repositories.description}</span>
           </div>
       ))}
@@ -18,7 +18,7 @@ function ReposBar({data, repositories}) {
   return (
     <div className="emptyState">
       <div className="group_297">
-        <img src={Rep}/>
+        <img src={Rep} alt=""/>
         <span>Repository list is empty</span>
       </div>
     </div>

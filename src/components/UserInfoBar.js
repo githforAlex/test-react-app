@@ -17,7 +17,7 @@ function UserInfoBar({data}) {
                 <span id="name">{data.name}</span></div>) : (<div></div>)}
                 {data.avatar_url ? (<div className="userLink">
                 <a href={data.html_url} 
-                className="reposLink" rel="noreferrer" 
+                className="reposLink" rel="noopener noreferrer" 
                 target="_blank">{data.login}</a></div>) : (<div></div>)}
                 <div className="followers">
                 {data.followers ? (<div className="dataitem">

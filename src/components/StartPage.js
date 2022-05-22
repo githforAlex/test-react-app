@@ -6,7 +6,7 @@ function StartPage(){
     return(
         <div className="startPage">
             <div className="group_299">
-                <img src={Image}/>
+                <img src={Image} alt=""/>
                 <span>Start with searching a GitHub user</span>
             </div>
         </div>

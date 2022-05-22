@@ -6,7 +6,7 @@ function notFound() {
     return (
         <div className="notFound">
             <div className="group_298">
-                <img src={User}/>
+                <img src={User} alt=""/>
                 <span>User not found</span>
             </div>
         </div>
