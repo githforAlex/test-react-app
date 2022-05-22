@@ -25,7 +25,7 @@ function UserInfoBar({data}) {
                 <span id="followers">{data.followers > 1000 ? (followers) : (data.followers)} followers</span></div>) : (<div></div>)}
                 {data.following ? (<div className="dataitem">
                 <img src={Provate} alt=""/>
-                <span span id="following">{data.following} following</span></div>) : (<div></div>)}
+                <span span id="following">{data.following > 1000 ? (following) : (data.following)} following</span></div>) : (<div></div>)}
               </div>
             </div>
         </div>
